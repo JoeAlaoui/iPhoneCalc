@@ -1,7 +1,3 @@
-Here’s a suggested outline and sample content for your `README.md` file for the [JoeAlaoui/iPhoneCalc](https://github.com/JoeAlaoui/iPhoneCalc) repository. You can copy and customize this to fit your project’s needs!
-
----
-
 # iPhoneCalc
 
 A modern, responsive calculator inspired by the iPhone calculator, built with HTML, CSS (Glassmorphism, Grid, Flexbox), and JavaScript.
