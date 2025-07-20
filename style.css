@@ -1,22 +1,70 @@
-body    {
-   margin: 0;
+body {
+    margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0e7ef 0%, #f4f6fb 100%);
+}
+
+.glass-header {
+    width: 100%;
+    max-width: 430px;
+    margin: 36px auto 24px auto;
+    padding: 28px 36px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.35) 0%, rgba(240,244,255,0.26) 100%);
+    border-radius: 22px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    text-align: center;
+    color: #222;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    transition: box-shadow 0.3s;
+}
+.glass-header:hover {
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.20);
+}
+.calculator-heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #2b2b2b;
+    text-shadow: 0 2px 8px rgba(150,150,150,0.08);
+}
+.calculator-description {
+    font-size: 1.13rem;
+    margin: 0;
+    line-height: 1.7;
+    color: #333;
+}
+.creator {
+    display: block;
+    margin-top: 14px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #47649d;
+    opacity: 0.85;
+    letter-spacing: 0.5px;
 }
 
 #calculator {
     font-family: Arial, sans-serif;
     background-color: hsl(0, 0%, 15%);
-    border-radius: 15px;
-    width: 90vw;            /* 90% of viewport width */
-    max-width: 500px;       /* Don't go wider than 500px */
-    min-width: 260px;       /* Optional: limit shrinking */
+    background: linear-gradient(135deg, #222 0%, #343645 100%);
+    border-radius: 18px;
+    width: 90vw;
+    max-width: 500px;
+    min-width: 260px;
     overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    margin-bottom: 36px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.22);
+    margin-bottom: 36px;
+    border: 1px solid rgba(255,255,255,0.03);
 }
-
 #display {
    width: 100%;
     padding: 20px;
@@ -67,6 +115,19 @@ button:active {
 
 .operator-btn:active {
     background-color: hsl(35, 100%, 75%);
+}
+
+.function-btn {
+    background-color: hsl(0, 0%, 60%);
+    color: black;
+}
+
+.function-btn:hover {
+    background-color: hsl(0, 0%, 70%);
+}
+
+.function-btn:active {
+    background-color: hsl(0, 0%, 80%);
 }
 
 @media (max-width: 500px) {

@@ -9,26 +9,48 @@
 
 </head>
 <body>
+
+   <div class="glass-header">
+    <h1 class="calculator-heading">iPhone Calculator Simulator</h1>
+    <p class="calculator-description">
+      A modern, responsive calculator inspired by iPhone design.<br><br>
+      <span class="tech-stack">
+        Built with <strong>HTML</strong>, <strong>CSS</strong> (Grid, Flexbox, Glassmorphism), and <strong>JavaScript</strong> for instant feedback and seamless user experience.
+      </span>
+      <br>
+      <span class="creator">Made by Youssef ALAOUI</span>
+    </p>
+  </div>
+
     <div id="calculator">
         <input id="display" readonly />
 <div id="keys">
-<button onclick="appendToDisplay('+')" class="operator-btn">+</button>
-<button onclick="appendToDisplay('7')">7</button>
-<button onclick="appendToDisplay('8')">8</button>
-<button onclick="appendToDisplay('9')">9</button>
-<button onclick="appendToDisplay('-')" class="operator-btn">-</button>
-<button onclick="appendToDisplay('4')">4</button>
-<button onclick="appendToDisplay('5')">5</button>
-<button onclick="appendToDisplay('6')">6</button>
-<button onclick="appendToDisplay('*')" class="operator-btn">*</button>
-<button onclick="appendToDisplay('1')">1</button>
-<button onclick="appendToDisplay('2')">2</button>
-<button onclick="appendToDisplay('3')">3</button>
-<button onclick="appendToDisplay('/')" class="operator-btn">/</button>
-<button onclick="appendToDisplay('0')">0</button>
-<button onclick="appendToDisplay('.')">.</button>
-<button onclick="calculate()">=</button>
-<button onclick="clearDisplay()" class="operator-btn">C</button>
+           <!-- First row: AC, ±, %, / -->
+            <button onclick="clearDisplay()" class="function-btn">AC</button>
+            <button onclick="toggleSign()" class="function-btn">±</button>
+            <button onclick="appendToDisplay('%')" class="function-btn">%</button>
+            <button onclick="appendToDisplay('/')" class="operator-btn">÷</button>
+            <!-- Second row: 7, 8, 9, * -->
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')" class="operator-btn">×</button>
+            <!-- Third row: 4, 5, 6, - -->
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')" class="operator-btn">−</button>
+            <!-- Fourth row: 1, 2, 3, + -->
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+            <!-- Fifth row: ⌫, 0, ., =  -->
+            <button onclick="backspace()">⌫</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()" class="operator-btn">=</button>
+           
     </div>
 
     <script src="script.js"></script>
