@@ -7,6 +7,13 @@ body {
     background: linear-gradient(135deg, #e0e7ef 0%, #f4f6fb 100%);
 }
 
+mark  {
+    background-color: rgba(255, 255, 0, 0.5);
+    padding: 0.2em;
+    border-radius: 4px;s
+}
+
+
 .glass-header {
     width: 100%;
     max-width: 430px;
